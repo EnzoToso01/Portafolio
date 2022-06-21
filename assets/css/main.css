@@ -1914,7 +1914,7 @@ input, select, textarea {
 		button.primary,
 		.button.primary {
 			background-color: #ffffff;
-			color: #312450 !important;
+			color: #000000 !important;
 		}
 
 			input[type="submit"].primary:after,
