@@ -3213,6 +3213,7 @@ input, select, textarea {
 			justify-content: center;
 			align-items: center;
 			text-align: center;
+			
 		}
 
 		.wrapper > .inner img{	
@@ -3224,17 +3225,49 @@ input, select, textarea {
 			animation: zoom-in-img 1s ease-in-out forwards;
 		}
 
+		.wrapper > .inner p{	
+			animation: change-inner-text-color-out 0.2s ease-in-out forwards;
+		}
+		.wrapper > .inner p:hover{	
+			animation: change-inner-text-color-in 0.2s ease-in-out forwards;
+		}
+
 		@keyframes zoom-in-img {
 			100%{
 				width: 30%;
-				height:30%
-				
+				height:30%			
 			}
 		}
+
 		@keyframes zoom-out-img {
-			from   { width:30%; height: 30%; }
-			to { width:25%; height:25%;}
+			0%{
+				width: 30%;
+				height: 30%;
+			}
+			100%{
+				width: 25%;
+				height: 25%;
+			}
 		}
+
+		@keyframes change-inner-text-color-in{
+			0%{
+				color:rgba(255, 255, 255, 0.35);
+			}
+			100%{
+				color: white;
+			}
+		}
+
+		@keyframes change-inner-text-color-out{
+			0%{
+				color: white;		
+			}
+			100%{
+				color:rgba(255, 255, 255, 0.35);
+			}
+		}
+
 
 			@media screen and (max-width: 1680px) {
 
